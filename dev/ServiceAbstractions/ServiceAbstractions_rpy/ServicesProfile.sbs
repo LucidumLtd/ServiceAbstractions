@@ -1,0 +1,561 @@
+I-Logix-RPY-Archive version 8.12.0 C++ 9728113
+{ IProfile 
+	- _id = GUID 815d640c-6fe1-41dc-8ccf-13013f1530ad;
+	- _myState = 8192;
+	- _name = "ServicesProfile";
+	- _modifiedTimeWeak = 11.7.2016::17:22:58;
+	- Declaratives = { IRPYRawContainer 
+		- size = 6;
+		- value = 
+		{ IStereotype 
+			- _id = GUID 125dbe0a-9be9-4147-aa32-64786784f388;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 7;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Argument";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Attribute";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "FileName";
+										- _Value = "SAL_$name";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Event";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "AnimateArguments";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Operation";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "AnimateArguments";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Package";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "FileName";
+										- _Value = "SAL_$name";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Type";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Force,True,False";
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Package";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "Animate";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "DefineNameSpace";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "NameSpaceName";
+										- _Value = "SAL";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "ServiceAbstractionLayer";
+			- Dependencies = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IDependency 
+					- _id = GUID ff9288f2-0f5f-4cff-8fb8-8d8ada0e6c4f;
+					- _name = "DisplayPkg";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "PredefinedTypes.sbs";
+							- _subsystem = "PredefinedTypes";
+							- _class = "";
+							- _name = "StandardContent";
+							- _id = GUID 95c56903-e092-4f0c-b0a1-2a2fa034c479;
+						}
+					}
+					- _modifiedTimeWeak = 11.7.2016::16:23:37;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "ISubsystem";
+						- _filename = "ServiceNamePkg.sbs";
+						- _subsystem = "ServicesProfile";
+						- _class = "";
+						- _name = "ServiceNamePkg";
+						- _id = GUID 3f411593-ac06-4c0e-a713-537ef2625831;
+					}
+				}
+			}
+			- _modifiedTimeWeak = 11.7.2016::17:22:58;
+			- _description = { IDescription 
+				- _text = "Service Abstraction Layer";
+			}
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Package"; 
+			}
+		}
+		{ IStereotype 
+			- _id = GUID faac087e-6dd5-40b5-8018-6b606f2b450e;
+			- _myState = 8192;
+			- _name = "SALAdapter";
+			- _modifiedTimeWeak = 11.7.2016::15:13:55;
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Package"; 
+			}
+		}
+		{ IStereotype 
+			- _id = GUID f8c0c259-e253-467d-86d4-429eedbe7dfe;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 3;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "GenerateImplicitConstructors";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "StandardOperations";
+										- _Value = "instance";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "instanceDeclaration";
+										- _Value = "public:
+
+	static $Name* instance();";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Format";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "Fill.FillColor";
+										- _Value = "166,202,240";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillHatch";
+										- _Value = "5";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillStyle";
+										- _Value = "0";
+										- _Type = Int;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Interface";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "Fill.FillColor";
+										- _Value = "166,202,240";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillHatch";
+										- _Value = "5";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillStyle";
+										- _Value = "0";
+										- _Type = Int;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Model";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Stereotype";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "BrowserGroupIcon";
+										- _Value = "..\\icons\\no1.ico";
+										- _Type = File;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "MonoState";
+			- _modifiedTimeWeak = 11.7.2016::15:12:28;
+			- _description = { IDescription 
+				- _text = "As suggested in the GoF book, an abstract factory is usually implemented as a singleton. 
+
+The singleton pattern has therefore been combined through the means of a standard operation.";
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID aba6b5e9-88b3-4b16-81bd-933c14deefe5;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IStereotype";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "Interface";
+						- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Class"; 
+			}
+		}
+		{ IStereotype 
+			- _id = GUID b0c2b6b2-0f7e-42fa-8d05-d9ddca3420dc;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "ImplementationProlog";
+										- _Value = "// From Property CPP_CG:Class:ImplementationProlog
+// Replace <<AbstractFactoryName>> with SuperClass and
+// <<ConcreteFactoryName>> with this class name
+<<AbstractFactoryName>>* <<AbstractFactoryName>>::instance()
+{
+	static <<ConcreteFactoryName>> theFactory;
+	return &theFactory;
+}
+";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Format";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 6;
+									- value = 
+									{ IProperty 
+										- _Name = "Fill.BackgroundColor";
+										- _Value = "255,251,240";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Fill.BackgroundMode";
+										- _Value = "2";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillColor";
+										- _Value = "166,202,240";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillHatch";
+										- _Value = "0";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillStyle";
+										- _Value = "0";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.Transparent_Fill";
+										- _Value = "0";
+										- _Type = Int;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Interface";
+								- Properties = { IRPYRawContainer 
+									- size = 6;
+									- value = 
+									{ IProperty 
+										- _Name = "Fill.BackgroundColor";
+										- _Value = "255,251,240";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Fill.BackgroundMode";
+										- _Value = "2";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillColor";
+										- _Value = "166,202,240";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillHatch";
+										- _Value = "0";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.FillStyle";
+										- _Value = "0";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Fill.Transparent_Fill";
+										- _Value = "0";
+										- _Type = Int;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Concrete MonoState";
+			- _modifiedTimeWeak = 11.7.2016::15:12:28;
+			- _description = { IDescription 
+				- _text = "A Concrete Factory is a specialisation of an Abstract Factory.
+
+As the Abstract Factory is implemented as a singleton it is necessary to modify the contents of the CPP_CG::Class::ImplementationProlog property to support this.";
+			}
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Class"; 
+			}
+		}
+		{ IStereotype 
+			- _id = GUID 5df65f54-c819-473e-ab22-3826be7b2dbb;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Relation";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "FilledDiamondScheme";
+										- _Value = "Aggregation";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Aggregation, Composition";
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Format";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Composition";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Line.LineColor";
+										- _Value = "0,128,128";
+										- _Type = Color;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "CreatedViaServiceFactory";
+			- _modifiedTimeWeak = 11.7.2016::16:20:51;
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "AssociationEnd"; 
+			}
+		}
+		{ ISubsystem 
+			- fileName = "ServiceNamePkg";
+			- _id = GUID 3f411593-ac06-4c0e-a713-537ef2625831;
+		}
+	}
+	- weakCGTime = 11.7.2016::17:22:58;
+	- strongCGTime = 11.7.2016::16:20:19;
+	- _defaultComposite = GUID 2c2a8da7-56de-4de2-9f9f-c042d5fb1e32;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 2c2a8da7-56de-4de2-9f9f-c042d5fb1e32;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 11.7.2016::16:38:3;
+			- weakCGTime = 11.7.2016::16:38:3;
+			- strongCGTime = 11.7.2016::16:20:19;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 11.7.2016::16:20:26;
+}
+
